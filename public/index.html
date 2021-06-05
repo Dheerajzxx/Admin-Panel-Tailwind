@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Admin Panel</title>
+</head>
+
+<body class="bg-gray-100 relative antialiased">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full top-0 z-50">
+        <div class="h-14 w-full flex justify-between items-center bg-gradient-to-r from-teal-400 to-indigo-800">
+            <div class="flex items-center justify-around">
+                <!-- Logo -->
+                <div id="logo" class="mx-20 px-2 w-14 h-10 transform transition-all duration-300">
+                    <a href="source.html"> <img class="w-full h-full" src="./assets/Logo.png" alt=""></a>
+                </div>
+                <!-- Menu Bar -->
+                <div id="menu-bar" class="px-2 text-white text-2xl cursor-pointer"><i class="fas fa-bars"></i></div>
+                <!-- Company Name -->
+                <div class="px-2 text-white text-lg font-semibold">Sentriqo Technologies</div>
+            </div>
+            <div class="flex">
+                <!-- Search Box -->
+                <div class="relative text-white">
+                    <input type="search" name="serch" placeholder="Search"
+                        class="bg-white bg-opacity-20 placeholder-white h-9 w-44 pl-5 pr-10 mt-1 rounded-full text-sm focus:outline-none">
+                    <button type="submit" class="absolute right-0 top-0 mt-4 mr-4">
+                        <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                            viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;"
+                            xml:space="preserve" width="512px" height="512px">
+                            <path
+                                d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                        </svg>
+                    </button>
+                </div>
+                <!-- Language dropdown-->
+                <div id="language-dropdown" class="flex items-center justify-center nav-dropdown">
+                    <div class=" relative inline-block text-left">
+                        <span class="rounded-md shadow-sm">
+                            <button
+                                class="inline-flex justify-center w-full px-4  text-sm font-medium leading-5 text-white transition duration-150 ease-in-out hover:text-gray-200 focus:outline-none  focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
+                                type="button">
+                                <span>English</span>
+                                <svg class="w-5 h-5 ml-2 -mr-1 navbar-arrow transition-all duration-300 transform"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button></span>
+                        <div
+                            class="absolute hidden dropdown-menu right-0 top-10 bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none">
+                            <div class="px-4 py-3 w-32">
+                                <a href="#" class="text-sm leading-5"><i class="fas fa-flag-checkered pr-2"></i>
+                                    Hindi</a>
+                            </div>
+                            <div class="px-4 py-3">
+                                <a href="#" class="text-sm leading-5"><i class="fas fa-flag-checkered pr-2"></i>
+                                    Marathi</a>
+                            </div>
+                            <div class="px-4 py-3">
+                                <a href="#" class="text-sm leading-5"><i class="fas fa-flag-checkered pr-2"></i>
+                                    Sanskrit</a>
+                            </div>
+                            <div class="px-4 py-3">
+                                <a href="#" class="text-sm leading-5"><i class="fas fa-flag-checkered pr-2"></i>
+                                    Bengoli</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Notification Icon -->
+                <div class="notification p-2 text-xl text-white"><i class="far fa-bell"></i></div>
+                <!-- Message Icon -->
+                <div class="message p-2 text-xl text-white"><i class="far fa-comment-alt"></i></div>
+                <!-- Admin dropdown-->
+                <div id="admin-dropdown" class="flex items-center justify-center nav-dropdown">
+                    <div class=" relative inline-block text-left">
+                        <span class="rounded-md shadow-sm">
+                            <button
+                                class="inline-flex justify-center w-full px-4  text-sm font-medium leading-5 text-white transition duration-150 ease-in-out hover:text-gray-200 focus:outline-none  focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
+                                type="button">
+                                <span>Admin</span>
+                                <svg class="w-5 h-5 ml-2 -mr-1 navbar-arrow transition-all duration-300 transform"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button></span>
+                        <div
+                            class="absolute hidden dropdown-menu right-0 top-10 bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none">
+                            <div class="px-4 py-3 w-40">
+                                <a href="#" class="text-sm leading-5"><i class="fas fa-user-alt pr-2"> </i> Profile</a>
+                            </div>
+                            <div class="px-4 py-3">
+                                <a href="#" class="text-sm leading-5"><i class="fas fa-cog pr-2"> </i> Setting</a>
+                            </div>
+                            <div class="px-4 py-3">
+                                <a href="#" class="text-sm leading-5"><i class="fas fa-sign-out-alt pr-2"> </i>
+                                    Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="flex flex-col flex-auto flex-shrink-0 fixed">
+        <div id="sidebar"
+            class="fixed flex flex-col top-12 left-0 bg-gray-700 h-full border-r transform transition-all duration-100 ease-linear">
+            <div class="overflow-y-auto overflow-x-hidden flex-grow">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul class="flex flex-col py-4 space-y text-gray-300 font-medium">
+
+                        <!-- Menu group title -->
+
+                        <li class="max-bar menu-title ml-4 flex flex-row items-center h-8 w-52">
+                            <span class="text-sm tracking-wide text-gray-50"> Main </span>
+                        </li>
+
+                        <!-- Menu title -->
+
+                        <li class="submenu">
+                            <a href="#"
+                                class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-600 hover:text-gray-100 border-l-4 border-transparent hover:border-teal-400 pr-6 pl-4">
+                                <span class="mini-bar"><i class="fas fa-tachometer-alt"></i></span>
+                                <span class="max-bar ml-2 text-sm tracking-wide truncate"> Dashboard </span>
+                                <span
+                                    class="max-bar text-white text-xs absolute right-4 top-3.5 transform transition-all duration-300 menu-arrow">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span></a>
+
+                                <!-- Menu content -->
+
+                            <ul class="hidden">
+                                <li class="max-bar">
+                                    <a href="index.html"
+                                        class="flex flex-row items-center h-11 focus:outline-none hover:bg-gray-600 hover:text-gray-100 border-l-4 border-transparent hover:border-teal-400 pr-6 pl-9">
+                                        <span class="ml-2 text-sm tracking-wide truncate"> Dashboard drop 1 </span>
+                                    </a>
+                                </li>
+                                <li class="max-bar">
+                                    <a href="index.html"
+                                        class="flex flex-row items-center h-11 focus:outline-none hover:bg-gray-600 hover:text-gray-100 border-l-4 border-transparent hover:border-teal-400 pr-6 pl-9">
+                                        <span class="ml-2 text-sm tracking-wide truncate"> Dashboard drop 2 </span>
+                                    </a>
+                                </li>
+                                <li class="submenu">
+                                    <a href="#"
+                                        class="max-bar relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-600 hover:text-gray-100 border-l-4 border-transparent hover:border-teal-400 pr-6 pl-9">
+                                        <span class="ml-2 text-sm tracking-wide truncate"> Dashboard submenu </span>
+                                        <span
+                                            class="max-bar text-white text-xs absolute right-4 top-3.5 transform transition-all duration-300 menu-arrow">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </span>
+                                    </a>
+
+                                <!-- Sub menu content -->
+                                
+                                    <ul class="hidden">
+                                        <li class="max-bar">
+                                            <a href="index.html"
+                                                class="flex flex-row items-center h-11 focus:outline-none hover:bg-gray-600 hover:text-gray-100 border-l-4 border-transparent hover:border-teal-400 pr-6 pl-9">
+                                                <span class="ml-2 text-sm tracking-wide truncate"> Dashboard drop 1
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="max-bar">
+                                            <a href="index.html"
+                                                class="flex flex-row items-center h-11 focus:outline-none hover:bg-gray-600 hover:text-gray-100 border-l-4 border-transparent hover:border-teal-400 pr-6 pl-9">
+                                                <span class="ml-2 text-sm tracking-wide truncate"> Dashboard drop 2
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"
+                                class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-600 hover:text-gray-100 border-l-4 border-transparent hover:border-teal-400 pr-6 pl-4">
+                                <span class="mini-bar"><i class="fas fa-cube"></i></span>
+                                <span class="max-bar ml-2 text-sm tracking-wide truncate">Apps</span>
+                                <span
+                                    class="max-bar text-white text-xs absolute right-4 top-3.5 transform transition-all duration-300 menu-arrow">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span></a>
+                            <ul class="hidden">
+                                <li class="max-bar">
+                                    <a href="index.html"
+                                        class="flex flex-row items-center h-11 focus:outline-none hover:bg-gray-600 hover:text-gray-100 border-l-4 border-transparent hover:border-teal-400 pr-6 pl-9">
+                                        <span class="ml-2 text-sm tracking-wide truncate"> Apps drop 1 </span>
+                                    </a>
+                                </li>
+                                <li class="max-bar">
+                                    <a href="index.html"
+                                        class="flex flex-row items-center h-11 focus:outline-none hover:bg-gray-600 hover:text-gray-100 border-l-4 border-transparent hover:border-teal-400 pr-6 pl-9">
+                                        <span class="ml-2 text-sm tracking-wide truncate"> Apps drop 2</span>
+                                    </a>
+                                </li>
+                                <li class="submenu">
+                                    <a href="#"
+                                        class="max-bar relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-600 hover:text-gray-100 border-l-4 border-transparent hover:border-teal-400 pr-6 pl-9">
+                                        <span class="ml-2 text-sm tracking-wide truncate"> Apps submenu </span>
+                                        <span
+                                            class="max-bar text-white text-xs absolute right-4 top-3.5 transform transition-all duration-300 menu-arrow">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </span>
+                                    </a>
+                                    <ul class="hidden">
+                                        <li class="max-bar">
+                                            <a href="index.html"
+                                                class="flex flex-row items-center h-11 focus:outline-none hover:bg-gray-600 hover:text-gray-100 border-l-4 border-transparent hover:border-teal-400 pr-6 pl-9">
+                                                <span class="ml-2 text-sm tracking-wide truncate"> Apps drop 1 </span>
+                                            </a>
+                                        </li>
+                                        <li class="max-bar">
+                                            <a href="index.html"
+                                                class="flex flex-row items-center h-11 focus:outline-none hover:bg-gray-600 hover:text-gray-100 border-l-4 border-transparent hover:border-teal-400 pr-6 pl-9">
+                                                <span class="ml-2 text-sm tracking-wide truncate"> Apps drop 2 </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contents -->
+    <section id="main" class="ml-56 mt-14">
+        <h1>hello</h1>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
