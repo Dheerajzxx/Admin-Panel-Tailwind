@@ -1,7 +1,3 @@
-
-
-
-
 $(document).ready(function() {
     // Toggle Sidebar
     $("#menu-bar").click(function(){
@@ -61,12 +57,12 @@ $(document).ready(function() {
 				$('a', $(this).parents('ul:first')).find(".menu-arrow").removeClass('rotate-90');
 				$(this).next('ul').slideDown(350);
 				$(this).addClass('subdrop');
-                var $x = $(this).find(".menu-arrow").addClass('rotate-90');
+                $(this).find(".menu-arrow").addClass('rotate-90');
 				
 			} else if($(this).hasClass('subdrop')) {
 				$(this).removeClass('subdrop');
 				$(this).next('ul').slideUp(350);
-                var $x = $(this).find(".menu-arrow").removeClass('rotate-90');
+                $(this).find(".menu-arrow").removeClass('rotate-90');
 			}
 		});
 		$('#sidebar-menu ul li.submenu a.active').parents('li:last').children('a:first').addClass('active').trigger('click');
