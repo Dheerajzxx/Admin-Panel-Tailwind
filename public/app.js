@@ -1,11 +1,17 @@
 $(document).ready(function() {
     // Toggle Sidebar
-    $("#menu-bar").click(function(){
+    $("#menu-bar-max").click(function(){
         $('#logo').toggleClass('mx-20');
         $('.max-bar').toggle(300);
         $('#sidebar').toggleClass('minimum');
+        $('#main').toggleClass('lg:ml-56 lg:ml-16');
     });
-
+    $("#menu-bar-min").click(function(){
+        $('.max-bar').toggle(300);
+        $('.min-bar').toggle(300);
+        $('#sidebar').removeClass('minimum');
+    });
+    // Toggle mini Sidebar
     $( "#sidebar" )
         .mouseenter(function() {
             if($(this).hasClass('minimum')) {
@@ -16,10 +22,13 @@ $(document).ready(function() {
             if($(this).hasClass('minimum')) {
                 $('.max-bar').toggle(300);
             }
-        })
-        ;
+        });
 
-     // Navbar Show hide popover
+    // Toggle Search Box
+    $("#ToggleSearchBox").click(function(){
+        $('#SearchBox').toggleClass("hidden");
+    });
+    // Navbar Show hide popover
      $(".nav-dropdown").click(function(){
         $(this).find(".dropdown-menu").slideToggle( "slow");
         $(this).find(".navbar-arrow").toggleClass("rotate-180");
@@ -39,7 +48,7 @@ $(document).ready(function() {
         }            
     });
 
-	// Sidebar
+	// Sidebar dropdown
 	var Sidemenu = function() {
 		this.$menuItem = $('#sidebar-menu a');
 	};
