@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Admin Panel</title>
     <style>
-        
+
     </style>
 </head>
 
@@ -18,15 +18,21 @@
 
     <!-- Navbar -->
     <nav id="navbar" class="fixed w-full top-0 z-50">
-        <div class="h-14 w-full lg:flex justify-between items-center grid grid-cols-3 bg-gradient-to-r from-teal-400 to-indigo-800">
+        <div
+            class="h-14 w-full lg:flex justify-between items-center grid grid-cols-3 bg-gradient-to-r from-teal-400 to-indigo-800">
             <div class="flex lg:items-center items-start lg:justify-around">
                 <!-- Logo -->
-                <div id="logo" class="hidden lg:inline-block mx-20 px-2 w-14 h-10 transform transition-all duration-300 ease-in-out">
+                <div id="logo"
+                    class="hidden lg:inline-block mx-20 px-2 w-14 h-10 transform transition-all duration-300 ease-in-out">
                     <a href="#"> <img class="w-full h-full" src="./assets/Logo.png" alt=""></a>
                 </div>
                 <!-- Menu Bar -->
-                <div id="menu-bar-max" class="lg:pl-2 pl-6 pr-2 text-white text-2xl cursor-pointer hidden lg:inline-block"><i class="fas fa-bars"></i></div>
-                <div id="menu-bar-min" class="lg:pl-2 pl-6 pr-2 text-white text-2xl cursor-pointer lg:hidden inline-block"><i class="fas fa-bars"></i></div>
+                <div id="menu-bar-max"
+                    class="lg:pl-2 pl-6 pr-2 text-white text-2xl cursor-pointer hidden lg:inline-block"><i
+                        class="fas fa-bars"></i></div>
+                <div id="menu-bar-min"
+                    class="lg:pl-2 pl-6 pr-2 text-white text-2xl cursor-pointer lg:hidden inline-block"><i
+                        class="fas fa-bars"></i></div>
                 <!-- Company Name -->
                 <div class="hidden lg:inline-block px-2 text-white text-lg font-semibold">Sentriqo Technologies</div>
             </div>
@@ -37,8 +43,12 @@
             </div>
             <div class="lg:flex items-center justify-around grid md:grid-cols-5 grid-cols-2 relative">
                 <!-- Search Box -->
-                <div id="ToggleSearchBox" class="lg:hidden flex items-center md:justify-center justify-end text-white hover:text-gray-300 text-lg" ><i class="h-5 w-5 fas fa-search"></i></div>
-                <div id="SearchBox" class="lg:relative absolute lg:inline-block hidden lg:top-0 top-12 lg:right-0 right-28 text-white">
+                <div id="ToggleSearchBox"
+                    class="lg:hidden flex items-center md:justify-center justify-end text-white hover:text-gray-300 text-lg">
+                    <i class="h-5 w-5 fas fa-search"></i>
+                </div>
+                <div id="SearchBox"
+                    class="lg:relative absolute lg:inline-block hidden lg:top-0 top-12 lg:right-0 right-28 text-white">
                     <input type="search" name="serch" placeholder="Search"
                         class="lg:bg-white bg-black lg:bg-opacity-20 bg-opacity-60 placeholder-white h-9 w-44 pl-5 pr-10 rounded-full text-sm focus:outline-none">
                     <button type="submit" class="absolute  right-0 top-0 mt-1.5 mr-4 focus:outline-none">
@@ -84,9 +94,13 @@
                     </div>
                 </div>
                 <!-- Notification Icon -->
-                <div class="notification hidden md:flex items-center justify-center py-2 lg:px-2 px-0 text-xl text-white"><i class="far fa-bell"></i></div>
+                <div
+                    class="notification hidden md:flex items-center justify-center py-2 lg:px-2 px-0 text-xl text-white">
+                    <i class="far fa-bell"></i>
+                </div>
                 <!-- Message Icon -->
-                <div class="message hidden md:flex items-center justify-center py-2 lg:px-2 px-0 text-xl text-white"><i class="far fa-comment-alt"></i></div>
+                <div class="message hidden md:flex items-center justify-center py-2 lg:px-2 px-0 text-xl text-white"><i
+                        class="far fa-comment-alt"></i></div>
                 <!-- Admin dropdown-->
                 <div id="admin-dropdown" class="flex items-center justify-center nav-dropdown">
                     <div class=" relative inline-block text-left">
@@ -94,7 +108,8 @@
                             <button
                                 class="inline-flex justify-center w-full lg:pr-4 pr-1 pl-9 relative  text-sm font-medium leading-5 text-white transition duration-150 ease-in-out hover:text-gray-200 focus:outline-none  focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
                                 type="button">
-                                <img class="w-8 h-8 px-1 rounded-full absolute left-0 lg:-top-1 -top-6  bg-gray-700" src="./assets/Logo.png" alt="">
+                                <img class="w-8 h-8 px-1 rounded-full absolute left-0 lg:-top-1 -top-6  bg-gray-700"
+                                    src="./assets/Logo.png" alt="">
                                 <span class="hidden lg:inline-block">Admin</span>
                                 <svg class="hidden lg:inline-block w-5 h-5 ml-2 -mr-1 navbar-arrow transition-all duration-300 transform"
                                     viewBox="0 0 20 20" fill="currentColor">
@@ -148,7 +163,7 @@
                                     <i class="fas fa-chevron-right"></i>
                                 </span></a>
 
-                                <!-- Menu content -->
+                            <!-- Menu content -->
 
                             <ul class="hidden">
                                 <li class="max-bar-item">
@@ -173,8 +188,8 @@
                                         </span>
                                     </a>
 
-                                <!-- Sub menu content -->
-                                
+                                    <!-- Sub menu content -->
+
                                     <ul class="hidden">
                                         <li class="max-bar-item">
                                             <a href="index.html"
@@ -248,12 +263,57 @@
         </div>
     </div>
 
-    <!-- Contents -->
-    <section id="main" class="lg:ml-56 ml-0 mt-14 transform transition-all duration-300 ease-in-out">
-        <h1>hello</h1>
-        <button type="submit" class="m-20 ">
-            hello
-        </button>
+    <!-- Page Content -->
+    <section id="main" class="lg:ml-56 ml-0 mt-14 px-4 py-6 transform transition-all duration-300 ease-in-out">
+        <!-- Dashboard content -->
+        <div>
+            <!-- Page header -->
+            <div class=" text-gray-600 px-4">
+                <h1 class="text-2xl font-semibold">Welcome Admin!</h1>
+                <h2 class="text-base font-semibold ">Dashboard</h2>
+            </div>
+
+            <!-- Counting Cards -->
+            <div class=" grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 my-6 px-1">
+                <div class="w-full flex items-center justify-center">
+                    <div class=" w-11/12 h-28 px-6 bg-gray-50 rounded-md shadow-md flex items-center justify-between">
+                        <div class="text-4xl text-teal-500"><i class="fas fa-cubes"></i></div>
+                        <div class="flex flex-col items-end text-gray-600">
+                            <p class="text-2xl font-bold">100</p>
+                            <p class="text-base font-semibold pt-2">Projects</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full flex items-center justify-center">
+                    <div class=" w-11/12 h-28 px-6 bg-gray-50 rounded-md shadow-md flex items-center justify-between">
+                        <div class="text-4xl text-teal-500"><i class="fas fa-dollar-sign"></i></div>
+                        <div class="flex flex-col items-end text-gray-600">
+                            <p class="text-2xl font-bold">80</p>
+                            <p class="text-base font-semibold pt-2">Clients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full flex items-center justify-center">
+                    <div class=" w-11/12 h-28 px-6 bg-gray-50 rounded-md shadow-md flex items-center justify-between">
+                        <div class="text-4xl text-teal-500"><i class="fas fa-tasks"></i></div>
+                        <div class="flex flex-col items-end text-gray-600">
+                            <p class="text-2xl font-bold">40</p>
+                            <p class="text-base font-semibold pt-2">Tasks</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full flex items-center justify-center">
+                    <div class=" w-11/12 h-28 px-6 bg-gray-50 rounded-md shadow-md flex items-center justify-between">
+                        <div class="text-4xl text-teal-500"><i class="fas fa-user"></i></div>
+                        <div class="flex flex-col items-end text-gray-600">
+                            <p class="text-2xl font-bold">500</p>
+                            <p class="text-base font-semibold pt-2">Employees</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
     </section>
 
     <script src="app.js"></script>
