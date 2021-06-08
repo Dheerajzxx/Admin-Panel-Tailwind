@@ -18,8 +18,7 @@
 
     <!-- Navbar -->
     <nav id="navbar" class="fixed w-full top-0 z-50">
-        <div
-            class="h-14 w-full lg:flex justify-between items-center grid grid-cols-3 bg-gradient-to-r from-teal-400 to-indigo-800">
+        <div class="h-14 w-full lg:flex justify-between items-center grid grid-cols-3 bg-primary text-white">
             <div class="flex lg:items-center items-start lg:justify-around">
                 <!-- Logo -->
                 <div id="logo"
@@ -27,14 +26,14 @@
                     <a href="#"> <img class="w-full h-full" src="./assets/Logo.png" alt=""></a>
                 </div>
                 <!-- Menu Bar -->
-                <div id="menu-bar-max"
-                    class="lg:pl-2 pl-6 pr-2 text-white text-2xl cursor-pointer hidden lg:inline-block"><i
-                        class="fas fa-bars"></i></div>
-                <div id="menu-bar-min"
-                    class="lg:pl-2 pl-6 pr-2 text-white text-2xl cursor-pointer lg:hidden inline-block"><i
-                        class="fas fa-bars"></i></div>
+                <div id="menu-bar-max" class="lg:pl-2 pl-6 pr-2  text-2xl cursor-pointer hidden lg:inline-block">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div id="menu-bar-min" class="lg:pl-2 pl-6 pr-2 text-2xl cursor-pointer lg:hidden inline-block">
+                    <i class="fas fa-bars"></i>
+                </div>
                 <!-- Company Name -->
-                <div class="hidden lg:inline-block px-2 text-white text-lg font-semibold">Sentriqo Technologies</div>
+                <div class="hidden lg:inline-block px-2 text-lg font-semibold">Sentriqo Technologies</div>
             </div>
             <div class="flex items-center justify-around lg:hidden">
                 <div class="px-2 w-14 h-10 transform transition-all duration-300 ease-in-out">
@@ -44,13 +43,13 @@
             <div class="lg:flex items-center justify-around grid md:grid-cols-5 grid-cols-2 lg:gap-2 relative">
                 <!-- Search Box -->
                 <div id="ToggleSearchBox"
-                    class="lg:hidden flex items-center md:justify-center justify-end text-white hover:text-gray-300 text-lg">
+                    class="lg:hidden flex items-center md:justify-center justify-end text-lg">
                     <i class="h-5 w-5 fas fa-search"></i>
                 </div>
                 <div id="SearchBox"
-                    class="lg:relative absolute lg:inline-block hidden lg:top-0 md:top-12 top-11 lg:right-0 md:right-36 right-1 text-white">
+                    class="lg:relative absolute lg:inline-block hidden lg:top-0 md:top-12 top-11 lg:right-0 md:right-36 right-1 ">
                     <input type="search" name="serch" placeholder="Search"
-                        class="lg:bg-white bg-black lg:bg-opacity-20 bg-opacity-60 placeholder-white h-9 w-44 pl-5 pr-10 rounded-full text-sm focus:outline-none">
+                        class="lg:bg-white bg-black lg:bg-opacity-40 bg-opacity-60 placeholder-white h-9 w-44 pl-5 pr-10 rounded-full text-sm focus:outline-none">
                     <button type="submit" class="absolute  right-0 top-0 mt-1.5 mr-4 focus:outline-none">
                         <i class="h-4 w-4 fas fa-search"></i>
                     </button>
@@ -58,22 +57,19 @@
                 <!-- Language dropdown-->
                 <div id="language-dropdown" class="hidden md:flex items-center justify-center nav-dropdown">
                     <div class=" relative inline-block text-left">
-                        <span class="rounded-md shadow-sm">
-                            <button
-                                class="inline-flex justify-center items-center w-full lg:pl-4 pl-3 text-sm font-medium leading-5 text-white transition duration-150 ease-in-out hover:text-gray-200 focus:outline-none  focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
-                                type="button">
-                                <i class="fas fa-flag-checkered pr-2 pt-1 text-lg"></i>
-                                <span class="hidden lg:inline-block">English</span>
-                                <svg class="hidden lg:inline-block w-5 h-5 ml-2 -mr-1 navbar-arrow transition-all duration-300 transform"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </button>
+                        <span class="inline-flex justify-center items-center w-full lg:pl-4 pl-3 text-sm font-medium
+                            leading-5 transition duration-300 ease-in-out hover:text-opacity-10 cursor-pointer">
+                            <i class="fas fa-flag-checkered pr-2 pt-1 text-lg"></i>
+                            <span class="hidden lg:inline-block">English</span>
+                            <svg class="hidden lg:inline-block w-5 h-5 ml-2 -mr-1 navbar-arrow transition-all duration-300 transform"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
                         </span>
                         <div
-                            class="absolute hidden dropdown-menu right-0 top-10 bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none">
+                            class="absolute hidden dropdown-menu right-0 top-10 bg-primary border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none">
                             <div class="px-4 py-3 w-32">
                                 <a href="#" class="text-sm leading-5"><i class="fas fa-flag-checkered pr-2"></i>
                                     Hindi</a>
@@ -94,30 +90,27 @@
                     </div>
                 </div>
                 <!-- Notification Icon -->
-                <div
-                    class="notification hidden md:flex items-center justify-center py-2 lg:px-2 px-0 text-lg text-white">
+                <div class="notification hidden md:flex items-center justify-center py-2 lg:px-2 px-0 text-lg ">
                     <i class="far fa-bell"></i>
                 </div>
                 <!-- Message Icon -->
-                <div class="message hidden md:flex items-center justify-center py-2 lg:px-2 px-0 text-base text-white"><i
+                <div class="message hidden md:flex items-center justify-center py-2 lg:px-2 px-0 text-base "><i
                         class="far fa-comment-alt"></i></div>
                 <!-- Admin dropdown-->
                 <div id="admin-dropdown" class="flex items-center justify-center nav-dropdown">
                     <div class=" relative inline-block text-left">
-                        <span class="rounded-md shadow-sm">
-                            <button
-                                class="inline-flex justify-center w-full lg:pr-4 pr-1 pl-9 relative  text-sm font-medium leading-5 text-white transition duration-150 ease-in-out hover:text-gray-200 focus:outline-none  focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
-                                type="button">
-                                <img class="w-8 h-8 px-1 rounded-full absolute left-0 lg:-top-1 -top-6  bg-gray-700"
-                                    src="./assets/Logo.png" alt="">
-                                <span class="hidden lg:inline-block">Admin</span>
-                                <svg class="hidden lg:inline-block w-5 h-5 ml-2 -mr-1 navbar-arrow transition-all duration-300 transform"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </button></span>
+                        <span
+                            class="inline-flex justify-center w-full lg:pr-4 pr-1 pl-9 relative  text-sm font-medium leading-5 transition duration-300 ease-in-out hover:text-gray-200 cursor-pointer">
+                            <img class="w-8 h-8 px-1 rounded-full absolute left-0 lg:-top-1 -top-6  bg-gray-700"
+                                src="./assets/Logo.png" alt="">
+                            <span class="hidden lg:inline-block">Admin</span>
+                            <svg class="hidden lg:inline-block w-5 h-5 ml-2 -mr-1 navbar-arrow transition-all duration-300 transform"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
                         <div
                             class="absolute hidden dropdown-menu right-0 top-10 bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none">
                             <div class="px-4 py-3 w-40">
@@ -140,26 +133,26 @@
     <!-- Sidebar -->
     <div class="flex flex-col flex-auto flex-shrink-0">
         <div id="sidebar"
-            class="w-56 fixed hidden lg:flex flex-col top-12 left-0 bg-gray-700 h-full border-r transform transition-all duration-100 ease-in-out z-40">
+            class="w-56 fixed hidden lg:flex flex-col top-12 left-0 bg-secondary h-full border-r transform transition-all duration-100 ease-in-out z-40">
             <div class="overflow-y-auto overflow-x-hidden flex-grow">
                 <div id="sidebar-menu" class="sidebar-menu">
-                    <ul class="flex flex-col py-4 space-y text-gray-300 font-medium">
+                    <ul class="flex flex-col py-4 space-y text-white font-medium">
 
                         <!-- Menu group title -->
 
                         <li class="max-bar-item menu-title ml-4 flex flex-row items-center h-8">
-                            <span class="text-sm tracking-wide text-gray-50"> Main </span>
+                            <span class="text-sm tracking-wide"> Main </span>
                         </li>
 
                         <!-- Menu title -->
 
                         <li class="submenu">
                             <a href="#"
-                                class="min-bar relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-600 hover:text-gray-100 border-l-4 border-transparent hover:border-teal-400 pr-6 pl-4">
+                                class="min-bar relative flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-4">
                                 <span><i class="fas fa-tachometer-alt"></i></span>
                                 <span class="max-bar-item ml-2 text-sm tracking-wide truncate"> Dashboard </span>
                                 <span
-                                    class="max-bar-item text-white text-xs absolute right-4 top-3.5 transform transition-all duration-300 menu-arrow">
+                                    class="max-bar-item text-xs absolute right-4 top-3.5 transform transition-all duration-300 menu-arrow">
                                     <i class="fas fa-chevron-right"></i>
                                 </span></a>
 
@@ -168,22 +161,22 @@
                             <ul class="hidden">
                                 <li class="max-bar-item">
                                     <a href="index.html"
-                                        class="flex flex-row items-center h-11 focus:outline-none hover:bg-gray-600 hover:text-gray-100 border-l-4 border-transparent hover:border-teal-400 pr-6 pl-9">
+                                        class="flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-9">
                                         <span class="ml-2 text-sm tracking-wide truncate"> Dashboard drop 1 </span>
                                     </a>
                                 </li>
                                 <li class="max-bar-item">
                                     <a href="index.html"
-                                        class="flex flex-row items-center h-11 focus:outline-none hover:bg-gray-600 hover:text-gray-100 border-l-4 border-transparent hover:border-teal-400 pr-6 pl-9">
+                                        class="flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-9">
                                         <span class="ml-2 text-sm tracking-wide truncate"> Dashboard drop 2 </span>
                                     </a>
                                 </li>
                                 <li class="submenu">
                                     <a href="#"
-                                        class="max-bar-item relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-600 hover:text-gray-100 border-l-4 border-transparent hover:border-teal-400 pr-6 pl-9">
+                                        class="max-bar-item relative flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-9">
                                         <span class="ml-2 text-sm tracking-wide truncate"> Dashboard submenu </span>
                                         <span
-                                            class="max-bar-item text-white text-xs absolute right-4 top-3.5 transform transition-all duration-300 menu-arrow">
+                                            class="max-bar-item text-xs absolute right-4 top-3.5 transform transition-all duration-300 menu-arrow">
                                             <i class="fas fa-chevron-right"></i>
                                         </span>
                                     </a>
@@ -193,14 +186,14 @@
                                     <ul class="hidden">
                                         <li class="max-bar-item">
                                             <a href="index.html"
-                                                class="flex flex-row items-center h-11 focus:outline-none hover:bg-gray-600 hover:text-gray-100 border-l-4 border-transparent hover:border-teal-400 pr-6 pl-9">
+                                                class="flex flex-row items-center h-11 focus:outline-none hover:bg-primary hover:bg-opacity-10 border-l-4 border-transparent hover:border-primary pr-6 pl-9">
                                                 <span class="ml-2 text-sm tracking-wide truncate"> Dashboard drop 1
                                                 </span>
                                             </a>
                                         </li>
                                         <li class="max-bar-item">
                                             <a href="index.html"
-                                                class="flex flex-row items-center h-11 focus:outline-none hover:bg-gray-600 hover:text-gray-100 border-l-4 border-transparent hover:border-teal-400 pr-6 pl-9">
+                                                class="flex flex-row items-center h-11 focus:outline-none hover:bg-primary hover:bg-opacity-10 border-l-4 border-transparent hover:border-primary pr-6 pl-9">
                                                 <span class="ml-2 text-sm tracking-wide truncate"> Dashboard drop 2
                                                 </span>
                                             </a>
@@ -211,46 +204,54 @@
                         </li>
                         <li class="submenu">
                             <a href="#"
-                                class="min-bar relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-600 hover:text-gray-100 border-l-4 border-transparent hover:border-teal-400 pr-6 pl-4">
-                                <span class="min-bar"><i class="fas fa-cube"></i></span>
-                                <span class="max-bar-item ml-2 text-sm tracking-wide truncate">Apps</span>
+                                class="min-bar relative flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-4">
+                                <span><i class="fas fa-cube"></i></span>
+                                <span class="max-bar-item ml-2 text-sm tracking-wide truncate"> Apps </span>
                                 <span
-                                    class="max-bar-item text-white text-xs absolute right-4 top-3.5 transform transition-all duration-300 menu-arrow">
+                                    class="max-bar-item text-xs absolute right-4 top-3.5 transform transition-all duration-300 menu-arrow">
                                     <i class="fas fa-chevron-right"></i>
                                 </span></a>
+
+                            <!-- Menu content -->
+
                             <ul class="hidden">
                                 <li class="max-bar-item">
                                     <a href="index.html"
-                                        class="flex flex-row items-center h-11 focus:outline-none hover:bg-gray-600 hover:text-gray-100 border-l-4 border-transparent hover:border-teal-400 pr-6 pl-9">
+                                        class="flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-9">
                                         <span class="ml-2 text-sm tracking-wide truncate"> Apps drop 1 </span>
                                     </a>
                                 </li>
                                 <li class="max-bar-item">
                                     <a href="index.html"
-                                        class="flex flex-row items-center h-11 focus:outline-none hover:bg-gray-600 hover:text-gray-100 border-l-4 border-transparent hover:border-teal-400 pr-6 pl-9">
-                                        <span class="ml-2 text-sm tracking-wide truncate"> Apps drop 2</span>
+                                        class="flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-9">
+                                        <span class="ml-2 text-sm tracking-wide truncate"> Apps drop 2 </span>
                                     </a>
                                 </li>
                                 <li class="submenu">
                                     <a href="#"
-                                        class="max-bar-item relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-600 hover:text-gray-100 border-l-4 border-transparent hover:border-teal-400 pr-6 pl-9">
+                                        class="max-bar-item relative flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-9">
                                         <span class="ml-2 text-sm tracking-wide truncate"> Apps submenu </span>
                                         <span
-                                            class="max-bar-item text-white text-xs absolute right-4 top-3.5 transform transition-all duration-300 menu-arrow">
+                                            class="max-bar-item text-xs absolute right-4 top-3.5 transform transition-all duration-300 menu-arrow">
                                             <i class="fas fa-chevron-right"></i>
                                         </span>
                                     </a>
+
+                                    <!-- Sub menu content -->
+
                                     <ul class="hidden">
                                         <li class="max-bar-item">
                                             <a href="index.html"
-                                                class="flex flex-row items-center h-11 focus:outline-none hover:bg-gray-600 hover:text-gray-100 border-l-4 border-transparent hover:border-teal-400 pr-6 pl-9">
-                                                <span class="ml-2 text-sm tracking-wide truncate"> Apps drop 1 </span>
+                                                class="flex flex-row items-center h-11 focus:outline-none hover:bg-primary hover:bg-opacity-10 border-l-4 border-transparent hover:border-primary pr-6 pl-9">
+                                                <span class="ml-2 text-sm tracking-wide truncate"> Apps drop 1
+                                                </span>
                                             </a>
                                         </li>
                                         <li class="max-bar-item">
                                             <a href="index.html"
-                                                class="flex flex-row items-center h-11 focus:outline-none hover:bg-gray-600 hover:text-gray-100 border-l-4 border-transparent hover:border-teal-400 pr-6 pl-9">
-                                                <span class="ml-2 text-sm tracking-wide truncate"> Apps drop 2 </span>
+                                                class="flex flex-row items-center h-11 focus:outline-none hover:bg-primary hover:bg-opacity-10 border-l-4 border-transparent hover:border-primary pr-6 pl-9">
+                                                <span class="ml-2 text-sm tracking-wide truncate"> Apps drop 2
+                                                </span>
                                             </a>
                                         </li>
                                     </ul>
@@ -268,7 +269,7 @@
         <!-- Dashboard content -->
         <div>
             <!-- Page header -->
-            <div class=" text-gray-600 px-4">
+            <div class=" text-secondary px-4">
                 <h1 class="text-2xl font-semibold">Welcome Admin!</h1>
                 <h2 class="text-base font-semibold ">Dashboard</h2>
             </div>
@@ -276,36 +277,36 @@
             <!-- Counting Cards -->
             <div class=" grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 px-1">
                 <div class="w-full flex items-center justify-center mt-6">
-                    <div class=" w-11/12 h-28 px-6 bg-gray-50 rounded-md shadow-md flex items-center justify-between">
-                        <div class="text-4xl text-teal-500"><i class="fas fa-cubes"></i></div>
-                        <div class="flex flex-col items-end text-gray-600">
+                    <div class=" w-11/12 h-28 px-6 bg-white rounded-md shadow-md flex items-center justify-between">
+                        <div class="text-4xl text-primary"><i class="fas fa-cubes"></i></div>
+                        <div class="flex flex-col items-end text-secondary">
                             <p class="text-2xl font-bold">100</p>
                             <p class="text-base font-semibold pt-2">Projects</p>
                         </div>
                     </div>
                 </div>
                 <div class="w-full flex items-center justify-center mt-6">
-                    <div class=" w-11/12 h-28 px-6 bg-gray-50 rounded-md shadow-md flex items-center justify-between">
-                        <div class="text-4xl text-teal-500"><i class="fas fa-dollar-sign"></i></div>
-                        <div class="flex flex-col items-end text-gray-600">
+                    <div class=" w-11/12 h-28 px-6 bg-white rounded-md shadow-md flex items-center justify-between">
+                        <div class="text-4xl text-primary"><i class="fas fa-dollar-sign"></i></div>
+                        <div class="flex flex-col items-end text-secondary">
                             <p class="text-2xl font-bold">80</p>
                             <p class="text-base font-semibold pt-2">Clients</p>
                         </div>
                     </div>
                 </div>
                 <div class="w-full flex items-center justify-center mt-6">
-                    <div class=" w-11/12 h-28 px-6 bg-gray-50 rounded-md shadow-md flex items-center justify-between">
-                        <div class="text-4xl text-teal-500"><i class="fas fa-tasks"></i></div>
-                        <div class="flex flex-col items-end text-gray-600">
+                    <div class=" w-11/12 h-28 px-6 bg-white rounded-md shadow-md flex items-center justify-between">
+                        <div class="text-4xl text-primary"><i class="fas fa-tasks"></i></div>
+                        <div class="flex flex-col items-end text-secondary">
                             <p class="text-2xl font-bold">40</p>
                             <p class="text-base font-semibold pt-2">Tasks</p>
                         </div>
                     </div>
                 </div>
                 <div class="w-full flex items-center justify-center mt-6">
-                    <div class=" w-11/12 h-28 px-6 bg-gray-50 rounded-md shadow-md flex items-center justify-between">
-                        <div class="text-4xl text-teal-500"><i class="fas fa-user"></i></div>
-                        <div class="flex flex-col items-end text-gray-600">
+                    <div class=" w-11/12 h-28 px-6 bg-white rounded-md shadow-md flex items-center justify-between">
+                        <div class="text-4xl text-primary"><i class="fas fa-user"></i></div>
+                        <div class="flex flex-col items-end text-secondary">
                             <p class="text-2xl font-bold">500</p>
                             <p class="text-base font-semibold pt-2">Employees</p>
                         </div>
