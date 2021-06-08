@@ -35,7 +35,7 @@ $(document).ready(function() {
     $("#menu-bar-min").click(function(){
         // for max-bar
         if ($('#sidebar').hasClass('hidden')) {
-            $('#sidebar').removeClass('hidden');
+            $('#sidebar').removeClass('hidden').addClass('flex');
         }
         else if($('#sidebar').hasClass('mini-sidebar')){
             $('#sidebar').removeClass('mini-sidebar').animate({
@@ -49,19 +49,10 @@ $(document).ready(function() {
               $('.max-bar-item').show(300);
         }
         else{
-            $('#sidebar').addClass('hidden');
+            $('#sidebar').addClass('hidden').removeClass('flex');
         }
         return false;
     });
-    // $("#menu-bar-min").click(function(){
-        // $('.max-bar').toggle(300);
-        // $('.min-bar').toggle(300);
-        // $('#sidebar').removeClass('minimum');
-    //     $('#sidebar').toggleClass('w-56 w-0');
-    // });
-
-
-
 
     // Toggle mini Sidebar
     $( "#sidebar" )

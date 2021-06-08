@@ -31,26 +31,26 @@
                 <div class="hidden lg:inline-block px-2 text-white text-lg font-semibold">Sentriqo Technologies</div>
             </div>
             <div class="flex items-center justify-around lg:hidden">
-                <div class="mx-20 px-2 w-14 h-10 transform transition-all duration-300 ease-in-out">
+                <div class="px-2 w-14 h-10 transform transition-all duration-300 ease-in-out">
                     <a href="#"> <img class="w-full h-full" src="./assets/Logo.png" alt=""></a>
                 </div>
             </div>
-            <div class="lg:flex items-center justify-around grid grid-cols-5 relative">
+            <div class="lg:flex items-center justify-around grid md:grid-cols-5 grid-cols-2 relative">
                 <!-- Search Box -->
-                <div id="ToggleSearchBox" class="lg:hidden flex items-center justify-center text-white hover:text-gray-300 text-lg" ><i class="h-5 w-5 fas fa-search"></i></div>
+                <div id="ToggleSearchBox" class="lg:hidden flex items-center md:justify-center justify-end text-white hover:text-gray-300 text-lg" ><i class="h-5 w-5 fas fa-search"></i></div>
                 <div id="SearchBox" class="lg:relative absolute lg:inline-block hidden lg:top-0 top-12 lg:right-0 right-28 text-white">
                     <input type="search" name="serch" placeholder="Search"
-                        class="lg:bg-white bg-black lg:bg-opacity-20 bg-opacity-60 placeholder-white h-9 w-44 pl-5 pr-10 mt-1 rounded-full text-sm focus:outline-none">
-                    <button type="submit" class="absolute  right-0 top-0 mt-2.5 mr-4 focus:outline-none">
+                        class="lg:bg-white bg-black lg:bg-opacity-20 bg-opacity-60 placeholder-white h-9 w-44 pl-5 pr-10 rounded-full text-sm focus:outline-none">
+                    <button type="submit" class="absolute  right-0 top-0 mt-1.5 mr-4 focus:outline-none">
                         <i class="h-4 w-4 fas fa-search"></i>
                     </button>
                 </div>
                 <!-- Language dropdown-->
-                <div id="language-dropdown" class="flex items-center justify-center nav-dropdown">
+                <div id="language-dropdown" class="hidden md:flex items-center justify-center nav-dropdown">
                     <div class=" relative inline-block text-left">
                         <span class="rounded-md shadow-sm">
                             <button
-                                class="inline-flex justify-center w-full lg:pl-4 pl-3 text-sm font-medium leading-5 text-white transition duration-150 ease-in-out hover:text-gray-200 focus:outline-none  focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
+                                class="inline-flex justify-center items-center w-full lg:pl-4 pl-3 text-sm font-medium leading-5 text-white transition duration-150 ease-in-out hover:text-gray-200 focus:outline-none  focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
                                 type="button">
                                 <i class="fas fa-flag-checkered pr-2 pt-1 text-lg"></i>
                                 <span class="hidden lg:inline-block">English</span>
@@ -84,9 +84,9 @@
                     </div>
                 </div>
                 <!-- Notification Icon -->
-                <div class="notification flex items-center justify-center py-2 lg:px-2 px-0 text-xl text-white"><i class="far fa-bell"></i></div>
+                <div class="notification hidden md:flex items-center justify-center py-2 lg:px-2 px-0 text-xl text-white"><i class="far fa-bell"></i></div>
                 <!-- Message Icon -->
-                <div class="message flex items-center justify-center py-2 lg:px-2 px-0 text-xl text-white"><i class="far fa-comment-alt"></i></div>
+                <div class="message hidden md:flex items-center justify-center py-2 lg:px-2 px-0 text-xl text-white"><i class="far fa-comment-alt"></i></div>
                 <!-- Admin dropdown-->
                 <div id="admin-dropdown" class="flex items-center justify-center nav-dropdown">
                     <div class=" relative inline-block text-left">
