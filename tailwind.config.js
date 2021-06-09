@@ -19,6 +19,9 @@ module.exports = {
       primary:'#0694a2',
       secondary:'#374151',
       },
+      width: {
+        '95.5': '95.5%',
+      },
     },
   },
   variants: {
