@@ -14,7 +14,7 @@
     </style>
 </head>
 
-<body class="bg-gray-100 relative antialiased">
+<body class="bg-gray-100 relative antialiased scrollbar-none">
 
     <!-- Navbar -->
     <nav id="navbar" class="fixed w-full top-0 z-50">
@@ -132,10 +132,11 @@
     <!-- Sidebar -->
     <div class="flex flex-col flex-auto flex-shrink-0">
         <div id="sidebar"
-            class="w-56 fixed hidden lg:flex flex-col top-12 left-0 bg-secondary h-full border-r transform transition-all duration-100 ease-in-out z-40">
-            <div class="overflow-y-auto overflow-x-hidden flex-grow">
-                <div id="sidebar-menu" class="sidebar-menu">
-                    <ul class="flex flex-col py-4 space-y text-white font-medium">
+            class="w-56 fixed hidden lg:flex flex-col left-0 bg-secondary h-full border-r transform transition-all duration-100 ease-in-out z-40 ">
+            <div class="h-16"></div>
+            <div class="overflow-y-auto overflow-x-hidden scrollbar-none flex-grow">
+                <div id="sidebar-menu" class="sidebar-menu ">
+                    <ul class="flex flex-col pb-4 space-y text-white font-medium">
 
                         <!-- Menu group title -->
 
@@ -146,66 +147,123 @@
                         <!-- Menu title -->
 
                         <li class="submenu">
-                            <a href="#"
+                            <a href="index.html"
                                 class="min-bar relative flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-4">
                                 <span><i class="fas fa-tachometer-alt"></i></span>
                                 <span class="max-bar-item ml-2 text-sm tracking-wide truncate"> Dashboard </span>
+                            </a>
+                        </li>
+
+                        <li class="submenu">
+                            <a href="index.html"
+                                class="min-bar relative flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-4">
+                                <span class="text-lg"><i class="fas fa-file-alt"></i></span>
+                                <span class="max-bar-item ml-2 text-sm tracking-wide truncate pl-1"> Forms </span>
                                 <span
                                     class="max-bar-item text-xs absolute right-4 top-3.5 transform transition-all duration-300 menu-arrow">
                                     <i class="fas fa-chevron-right"></i>
-                                </span></a>
-
-                            <!-- Menu content -->
+                                </span>
+                            </a>
 
                             <ul class="hidden">
                                 <li class="max-bar-item">
                                     <a href="index.html"
                                         class="flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-9">
-                                        <span class="ml-2 text-sm tracking-wide truncate"> Dashboard drop 1 </span>
+                                        <span class="ml-2 text-sm tracking-wide truncate"> Form </span>
                                     </a>
                                 </li>
                                 <li class="max-bar-item">
                                     <a href="index.html"
                                         class="flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-9">
-                                        <span class="ml-2 text-sm tracking-wide truncate"> Dashboard drop 2 </span>
+                                        <span class="ml-2 text-sm tracking-wide truncate"> Form with errors </span>
                                     </a>
-                                </li>
-                                <li class="submenu">
-                                    <a href="#"
-                                        class="max-bar-item relative flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-9">
-                                        <span class="ml-2 text-sm tracking-wide truncate"> Dashboard submenu </span>
-                                        <span
-                                            class="max-bar-item text-xs absolute right-4 top-3.5 transform transition-all duration-300 menu-arrow">
-                                            <i class="fas fa-chevron-right"></i>
-                                        </span>
-                                    </a>
-
-                                    <!-- Sub menu content -->
-
-                                    <ul class="hidden">
-                                        <li class="max-bar-item">
-                                            <a href="index.html"
-                                                class="flex flex-row items-center h-11 focus:outline-none hover:bg-primary hover:bg-opacity-10 border-l-4 border-transparent hover:border-primary pr-6 pl-9">
-                                                <span class="ml-2 text-sm tracking-wide truncate"> Dashboard drop 1
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li class="max-bar-item">
-                                            <a href="index.html"
-                                                class="flex flex-row items-center h-11 focus:outline-none hover:bg-primary hover:bg-opacity-10 border-l-4 border-transparent hover:border-primary pr-6 pl-9">
-                                                <span class="ml-2 text-sm tracking-wide truncate"> Dashboard drop 2
-                                                </span>
-                                            </a>
-                                        </li>
-                                    </ul>
                                 </li>
                             </ul>
                         </li>
+
+                        <li class="submenu">
+                            <a href="index.html"
+                                class="min-bar relative flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-4">
+                                <span class=""><i class="fas fa-table"></i></span>
+                                <span class="max-bar-item ml-2 text-sm tracking-wide truncate"> Table </span>
+                            </a>
+                        </li>
+
+                        <li class="submenu">
+                            <a href="index.html"
+                                class="min-bar relative flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-4">
+                                <span><i class="fas fa-square"></i></span>
+                                <span class="max-bar-item ml-2 text-sm tracking-wide truncate"> Modal </span>
+                                <span
+                                    class="max-bar-item text-xs absolute right-4 top-3.5 transform transition-all duration-300 menu-arrow">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </a>
+
+                            <ul class="hidden">
+                                <li class="max-bar-item">
+                                    <a href="index.html"
+                                        class="flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-9">
+                                        <span class="ml-2 text-sm tracking-wide truncate"> Modal form </span>
+                                    </a>
+                                </li>
+                                <li class="max-bar-item">
+                                    <a href="index.html"
+                                        class="flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-9">
+                                        <span class="ml-2 text-sm tracking-wide truncate"> Modal Confirmation </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="submenu">
+                            <a href="index.html"
+                                class="min-bar relative flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-4">
+                                <span><i class="fas fa-bell"></i></span>
+                                <span class="max-bar-item ml-2 text-sm tracking-wide truncate"> Notification </span>
+                            </a>
+                        </li>
+
+                        <li class="submenu">
+                            <a href="index.html"
+                                class="min-bar relative flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-4">
+                                <span><i class="fas fa-sign-in-alt"></i></span>
+                                <span class="max-bar-item ml-2 text-sm tracking-wide truncate"> Login / Signup </span>
+                                <span
+                                    class="max-bar-item text-xs absolute right-4 top-3.5 transform transition-all duration-300 menu-arrow">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </a>
+
+                            <ul class="hidden">
+                                <li class="max-bar-item">
+                                    <a href="index.html"
+                                        class="flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-9">
+                                        <span class="ml-2 text-sm tracking-wide truncate"> Login </span>
+                                    </a>
+                                </li>
+                                <li class="max-bar-item">
+                                    <a href="index.html"
+                                        class="flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-9">
+                                        <span class="ml-2 text-sm tracking-wide truncate"> Signup </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Menu group title -->
+
+                        <li class="max-bar-item menu-title ml-4 flex flex-row items-center h-8">
+                            <span class="text-sm tracking-wide"> Refrence menu </span>
+                        </li>
+
+                        <!-- Menu title -->
+
                         <li class="submenu">
                             <a href="#"
                                 class="min-bar relative flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-4">
-                                <span><i class="fas fa-cube"></i></span>
-                                <span class="max-bar-item ml-2 text-sm tracking-wide truncate"> Apps </span>
+                                <span><i class="fas fa-shapes"></i></span>
+                                <span class="max-bar-item ml-2 text-sm tracking-wide truncate"> Example </span>
                                 <span
                                     class="max-bar-item text-xs absolute right-4 top-3.5 transform transition-all duration-300 menu-arrow">
                                     <i class="fas fa-chevron-right"></i>
@@ -217,19 +275,19 @@
                                 <li class="max-bar-item">
                                     <a href="index.html"
                                         class="flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-9">
-                                        <span class="ml-2 text-sm tracking-wide truncate"> Apps drop 1 </span>
+                                        <span class="ml-2 text-sm tracking-wide truncate"> Example drop 1 </span>
                                     </a>
                                 </li>
                                 <li class="max-bar-item">
                                     <a href="index.html"
                                         class="flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-9">
-                                        <span class="ml-2 text-sm tracking-wide truncate"> Apps drop 2 </span>
+                                        <span class="ml-2 text-sm tracking-wide truncate"> Example drop 2 </span>
                                     </a>
                                 </li>
                                 <li class="submenu">
                                     <a href="#"
                                         class="max-bar-item relative flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-9">
-                                        <span class="ml-2 text-sm tracking-wide truncate"> Apps submenu </span>
+                                        <span class="ml-2 text-sm tracking-wide truncate"> Example drop 3 </span>
                                         <span
                                             class="max-bar-item text-xs absolute right-4 top-3.5 transform transition-all duration-300 menu-arrow">
                                             <i class="fas fa-chevron-right"></i>
@@ -242,14 +300,14 @@
                                         <li class="max-bar-item">
                                             <a href="index.html"
                                                 class="flex flex-row items-center h-11 focus:outline-none hover:bg-primary hover:bg-opacity-10 border-l-4 border-transparent hover:border-primary pr-6 pl-9">
-                                                <span class="ml-2 text-sm tracking-wide truncate"> Apps drop 1
+                                                <span class="ml-2 text-sm tracking-wide truncate"> Example drop 3.1
                                                 </span>
                                             </a>
                                         </li>
                                         <li class="max-bar-item">
                                             <a href="index.html"
                                                 class="flex flex-row items-center h-11 focus:outline-none hover:bg-primary hover:bg-opacity-10 border-l-4 border-transparent hover:border-primary pr-6 pl-9">
-                                                <span class="ml-2 text-sm tracking-wide truncate"> Apps drop 2
+                                                <span class="ml-2 text-sm tracking-wide truncate"> Example drop 3.2
                                                 </span>
                                             </a>
                                         </li>
