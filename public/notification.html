@@ -329,161 +329,149 @@
             </div>
         </div>
     </div>
-    <!-- sidebar end -->
+    <!-- Sidebar end -->
 
     <!-- Page Content -->
     <section id="main" class="lg:ml-56 ml-0 mt-14 px-4 py-6 transform transition-all duration-300 ease-in-out">
-        <!-- login form 1 -->
-        <div class=" flex items-center justify-center px-5 py-5">
-            <div class="bg-gray-100 text-gray-500 rounded-3xl shadow-xl w-full overflow-hidden"
-                style="max-width:1000px">
-                <div class="flex md:flex-row flex-col w-full items-center justify-center">
-                    <div class=" md:w-1/3 w-1/2 pt-4"><img src="./assets/Logo.png" alt=""></div>
-                    <div class="w-full md:w-1/2 py-10 px-5 md:px-10">
-                        <div class="text-center mb-10">
-                            <h1 class="font-bold text-3xl text-gray-900">REGISTER</h1>
-                            <p>Enter your information to register</p>
-                        </div>
-                        <div>
-                            <div class="flex -mx-3">
-                                <div class="w-full px-3 mb-5">
-                                    <label for="" class="text-xs font-semibold px-1">Email</label>
-                                    <div class="flex">
-                                        <div
-                                            class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
-                                            <i class="fas fa-envelope text-gray-400 text-lg"></i>
-                                        </div>
-                                        <input type="email"
-                                            class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
-                                            placeholder="johnsmith@example.com">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex -mx-3">
-                                <div class="w-full px-3 mb-12">
-                                    <label for="" class="text-xs font-semibold px-1">Password</label>
-                                    <div class="flex">
-                                        <div
-                                            class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
-                                            <i class="fas fa-user-lock text-gray-400 text-lg"></i>
-                                        </div>
-                                        <input type="password"
-                                            class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
-                                            placeholder="************">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex -mx-3">
-                                <div class="w-full px-3 mb-5">
-                                    <button
-                                        class="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold focus:outline-none">
-                                        Login </button>
-                                </div>
-                            </div>
-                            <div class="flex -mx-3">
-                                <div class="w-full px-3 mb-5">
-                                    <a href="signup.html"
-                                        class="block w-full max-w-xs mx-auto bg-green-500 hover:bg-green-700 focus:bg-green-700 text-white text-center rounded-lg px-3 py-3 font-semibold">
-                                        Register Now </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Login form 1 end -->
-
-        <!-- Login form 2 -->
-        <div class="flex items-center min-h-screen p-4 bg-gray-100 lg:justify-center">
+        <div class="grid grid-cols-1 gap-2 justify-center items-center">
+            <!-- Danger -->
             <div
-                class="flex flex-col overflow-hidden bg-white rounded-md shadow-lg max md:flex-row md:flex-1 lg:max-w-screen-md">
-                <div
-                    class="p-4 py-6 text-white bg-primary md:w-80 md:flex-shrink-0 md:flex md:flex-col md:items-center md:justify-evenly">
-                    <div class="my-3 text-4xl font-bold tracking-wider text-center">
-                        <a href="#">Sentriqo</a>
-                    </div>
-                    <p class="mt-6 font-normal text-center text-gray-300 md:mt-0">
-                        With the power of Sentriqo, you can now focus only on functionaries for your digital products,
-                        while leaving the
-                        UI design on us!
-                    </p>
-                    <p class="flex flex-col items-center justify-center mt-10 text-center">
-                        <span>Don't have an account?</span>
-                        <a href="#" class="underline">Get Started!</a>
-                    </p>
-                    <p class="mt-6 text-sm text-center text-gray-300">
-                        Read our <a href="#" class="underline">terms</a> and <a href="#"
-                            class="underline">conditions</a>
-                    </p>
+                class='flex items-center text-white max-w-sm w-full bg-red-400 shadow-md rounded-lg overflow-hidden mx-auto'>
+                <div class='w-10 border-r px-2'>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636">
+                        </path>
+                    </svg>
                 </div>
-                <div class="p-5 bg-white md:flex-1">
-                    <h3 class="my-4 text-2xl font-semibold text-gray-700">Account Login</h3>
-                    <form action="#" class="flex flex-col space-y-5">
-                        <div class="flex flex-col space-y-1">
-                            <label for="email" class="text-sm font-semibold text-gray-500">Email address</label>
-                            <input type="email" id="email" autofocus
-                                class="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-20" />
-                        </div>
-                        <div class="flex flex-col space-y-1">
-                            <div class="flex items-center justify-between">
-                                <label for="password" class="text-sm font-semibold text-gray-500">Password</label>
-                                <a href="#" class="text-sm text-primary hover:underline focus:text-blue-800">Forgot
-                                    Password?</a>
-                            </div>
-                            <input type="password" id="password"
-                                class="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-20" />
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <input type="checkbox" id="remember"
-                                class="w-4 h-4 transition duration-300 rounded checked:rounded-full appearance-none border-2 border-gray-400  checked:border-transparent  checked:bg-transparent checked:bg-primary" />
-                            <label for="remember" class="text-sm font-semibold text-gray-500">Remember me</label>
-                        </div>
-                        <div>
-                            <button type="submit"
-                                class="w-full px-4 py-2 text-lg font-semibold text-white transition-colors duration-300 bg-primary rounded-md shadow hover:bg-opacity-75 focus:outline-none ">
-                                Log in
-                            </button>
-                        </div>
-                        <div class="flex flex-col space-y-5">
-                            <span class="flex items-center justify-center space-x-2">
-                                <span class="h-px bg-gray-400 w-14"></span>
-                                <span class="font-normal text-gray-500">or login with</span>
-                                <span class="h-px bg-gray-400 w-14"></span>
-                            </span>
-                            <div class="flex flex-col space-y-4">
-                                <a href="#"
-                                    class="flex items-center justify-center px-4 py-2 space-x-2 transition-colors duration-300 border border-gray-800 rounded-md group hover:bg-gray-800 focus:outline-none">
-                                    <span>
-                                        <svg class="w-5 h-5 text-gray-800 fill-current group-hover:text-white"
-                                            viewBox="0 0 16 16" version="1.1" aria-hidden="true">
-                                            <path fill-rule="evenodd"
-                                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span class="text-sm font-medium text-gray-800 group-hover:text-white">Github</span>
-                                </a>
-                                <a href="#"
-                                    class="flex items-center justify-center px-4 py-2 space-x-2 transition-colors duration-300 border border-blue-500 rounded-md group hover:bg-blue-500 focus:outline-none">
-                                    <span>
-                                        <svg class="text-blue-500 group-hover:text-white" width="20" height="20"
-                                            fill="currentColor">
-                                            <path
-                                                d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                    <span
-                                        class="text-sm font-medium text-blue-500 group-hover:text-white">Twitter</span>
-                                </a>
-                            </div>
-                        </div>
-                    </form>
+                <div class='flex items-center px-2 py-3'>
+                    <div class='mx-3'>
+                        <p>Unable to submit !</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- succes -->
+            <div
+                class='flex items-center text-white max-w-sm w-full bg-green-400 shadow-md rounded-lg overflow-hidden mx-auto'>
+                <div class='w-10 border-r px-2'>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
+                        </path>
+                    </svg>
+                </div>
+                <div class='flex items-center px-2 py-3'>
+                    <div class='mx-3'>
+                        <p>Succesful !</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- warning -->
+            <div
+                class='flex items-center text-white max-w-sm w-full bg-yellow-400 shadow-md rounded-lg overflow-hidden mx-auto'>
+                <div class='w-10 border-r px-2'>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M20.618 5.984A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016zM12 9v2m0 4h.01">
+                        </path>
+                    </svg>
+                </div>
+                <div class='flex items-center px-2 py-3'>
+                    <div class='mx-3'>
+                        <p>Something wrong !</p>
+                    </div>
+                </div>
+            </div>
+            <!-- info -->
+            <div
+                class='flex items-center text-white max-w-sm w-full bg-blue-400 shadow-md rounded-lg overflow-hidden mx-auto'>
+                <div class='w-10 border-r px-2'>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <div class='flex items-center px-2 py-3'>
+                    <div class='mx-3'>
+                        <p>Ready to submit !</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-white py-3 px-5 rounded-xl flex flex-col mb-5">
+                <div class="title text-xl font-medium mb-3">Dismissible Alerts</div>
+                <div class="w-full">
+                    <div class="py-3 px-5 mb-4 bg-blue-100 text-blue-900 text-sm rounded-md border border-blue-200 flex items-center justify-between" role="alert">
+                        <span>A simple primary alert—check it out!</span>
+                        <button class="w-4" type="button" data-dismiss="alert" aria-label="Close" onclick="this.parentElement.remove();">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="py-3 px-5 mb-4 bg-gray-100 text-gray-900 rounded-md text-sm border border-gray-200 flex items-center justify-between" role="alert">
+                        <span>A simple secondary alert—check it out!</span>
+                        <button class="w-4" type="button" data-dismiss="alert" aria-label="Close" onclick="this.parentElement.remove();">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="py-3 px-5 mb-4 bg-green-100 text-green-900 text-sm rounded-md border border-green-200 flex items-center justify-between" role="alert">
+                        <span>A simple success alert—check it out!</span>
+                        <button class="w-4" type="button" data-dismiss="alert" aria-label="Close" onclick="this.parentElement.remove();">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="py-3 px-5 mb-4 bg-red-100 text-red-900 text-sm rounded-md border border-red-200 flex items-center justify-between" role="alert">
+                        <span>A simple danger alert—check it out!</span>
+                        <button class="w-4" type="button" data-dismiss="alert" aria-label="Close" onclick="this.parentElement.remove();">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="py-3 px-5 mb-4 bg-yellow-100 text-yellow-900 text-sm rounded-md border border-yellow-200 flex items-center justify-between" role="alert">
+                        <span>A simple warning alert—check it out!</span>
+                        <button class="w-4" type="button" data-dismiss="alert" aria-label="Close" onclick="this.parentElement.remove();">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="py-3 px-5 mb-4 bg-purple-100 text-purple-900 text-sm rounded-md border border-purple-200 flex items-center justify-between" role="alert">
+                        <span>A simple info alert—check it out!</span>
+                        <button class="w-4" type="button" data-dismiss="alert" aria-label="Close" onclick="this.parentElement.remove();">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="py-3 px-5 mb-4 bg-gray-300 text-gray-900 rounded-md text-sm border border-gray-400 flex items-center justify-between" role="alert">
+                        <span>A simple dark alert—check it out!</span>
+                        <button class="w-4" type="button" data-dismiss="alert" aria-label="Close" onclick="this.parentElement.remove();">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Login form 2 end -->
     </section>
 
     <script src="app.js"></script>
