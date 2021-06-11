@@ -31,6 +31,11 @@ module.exports = {
     require('tailwind-scrollbar')
   ],
   variants: {
-    scrollbar: ['rounded']
+    scrollbar: ['rounded'],
+    extend: {
+    backgroundColor: ['checked'],
+    borderColor: ['checked'],
+    borderRadius:['checked'],
+  },
 }
 }
