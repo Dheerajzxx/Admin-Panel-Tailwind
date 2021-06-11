@@ -33,7 +33,6 @@ $(document).ready(function() {
     });
     // Toggle Sidebar At Small Screen
     $("#menu-bar-min").click(function(){
-        // for max-bar
         if ($('#sidebar').hasClass('hidden')) {
             $('#sidebar').removeClass('hidden').addClass('flex');
         }
@@ -54,7 +53,7 @@ $(document).ready(function() {
         return false;
     });
 
-    // Toggle mini Sidebar
+    // Toggle mini Sidebar on hover
     $( "#sidebar" )
         .mouseenter(function() {
             if($(this).hasClass('mini-sidebar')) {

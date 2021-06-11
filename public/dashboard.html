@@ -14,7 +14,7 @@
     </style>
 </head>
 
-<body class="bg-gray-100 relative antialiased scrollbar-none">
+<body class="bg-gray-50 relative antialiased scrollbar-none">
 
     <!-- Navbar -->
     <nav id="navbar" class="fixed w-full top-0 z-50">
@@ -68,7 +68,7 @@
                             </svg>
                         </span>
                         <div
-                            class="absolute hidden dropdown-menu right-0 top-10 bg-primary border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none">
+                            class="absolute hidden dropdown-menu right-0 top-10 bg-white text-gray-700 border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none">
                             <div class="px-4 py-3 w-32">
                                 <a href="#" class="text-sm leading-5"><i class="fas fa-flag-checkered pr-2"></i>
                                     Hindi</a>
@@ -111,7 +111,7 @@
                             </svg>
                         </span>
                         <div
-                            class="absolute hidden dropdown-menu right-0 top-10 bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none">
+                            class="absolute hidden dropdown-menu right-0 top-10 bg-white text-gray-700 border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none">
                             <div class="px-4 py-3 w-40">
                                 <a href="#" class="text-sm leading-5"><i class="fas fa-user-alt pr-2"> </i> Profile</a>
                             </div>
@@ -128,6 +128,7 @@
             </div>
         </div>
     </nav>
+    <!-- Navbar end -->
 
     <!-- Sidebar -->
     <div class="flex flex-col flex-auto flex-shrink-0">
@@ -146,8 +147,8 @@
 
                         <!-- Menu title -->
 
-                        <li class="submenu">
-                            <a href="index.html"
+                        <li>
+                            <a href="dashboard.html"
                                 class="min-bar relative flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-4">
                                 <span><i class="fas fa-tachometer-alt"></i></span>
                                 <span class="max-bar-item ml-2 text-sm tracking-wide truncate"> Dashboard </span>
@@ -155,7 +156,7 @@
                         </li>
 
                         <li class="submenu">
-                            <a href="index.html"
+                            <a href="#"
                                 class="min-bar relative flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-4">
                                 <span class="text-lg"><i class="fas fa-file-alt"></i></span>
                                 <span class="max-bar-item ml-2 text-sm tracking-wide truncate pl-1"> Forms </span>
@@ -181,8 +182,8 @@
                             </ul>
                         </li>
 
-                        <li class="submenu">
-                            <a href="index.html"
+                        <li>
+                            <a href="table.html"
                                 class="min-bar relative flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-4">
                                 <span class=""><i class="fas fa-table"></i></span>
                                 <span class="max-bar-item ml-2 text-sm tracking-wide truncate"> Table </span>
@@ -190,7 +191,7 @@
                         </li>
 
                         <li class="submenu">
-                            <a href="index.html"
+                            <a href="#"
                                 class="min-bar relative flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-4">
                                 <span><i class="fas fa-square"></i></span>
                                 <span class="max-bar-item ml-2 text-sm tracking-wide truncate"> Modal </span>
@@ -216,8 +217,8 @@
                             </ul>
                         </li>
 
-                        <li class="submenu">
-                            <a href="index.html"
+                        <li>
+                            <a href="notification.html"
                                 class="min-bar relative flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-4">
                                 <span><i class="fas fa-bell"></i></span>
                                 <span class="max-bar-item ml-2 text-sm tracking-wide truncate"> Notification </span>
@@ -225,7 +226,7 @@
                         </li>
 
                         <li class="submenu">
-                            <a href="index.html"
+                            <a href="#"
                                 class="min-bar relative flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-4">
                                 <span><i class="fas fa-sign-in-alt"></i></span>
                                 <span class="max-bar-item ml-2 text-sm tracking-wide truncate"> Login / Signup </span>
@@ -237,13 +238,13 @@
 
                             <ul class="hidden">
                                 <li class="max-bar-item">
-                                    <a href="index.html"
+                                    <a href="login.html"
                                         class="flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-9">
                                         <span class="ml-2 text-sm tracking-wide truncate"> Login </span>
                                     </a>
                                 </li>
                                 <li class="max-bar-item">
-                                    <a href="index.html"
+                                    <a href="signup.html"
                                         class="flex flex-row items-center h-11 focus:outline-none hover:bg-opacity-10 hover:bg-primary border-l-4 border-transparent hover:border-primary pr-6 pl-9">
                                         <span class="ml-2 text-sm tracking-wide truncate"> Signup </span>
                                     </a>
@@ -320,7 +321,8 @@
             </div>
         </div>
     </div>
-
+    <!-- Sidebar end -->
+    
     <!-- Page Content -->
     <section id="main" class="lg:ml-56 ml-0 mt-14 px-4 py-6 transform transition-all duration-300 ease-in-out">
         <!-- Dashboard content -->
