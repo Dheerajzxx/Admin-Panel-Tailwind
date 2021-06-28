@@ -22,6 +22,12 @@ module.exports = {
       width: {
         '95.5': '95.5%',
       },
+      boxShadow: {
+        'shadow1': '0px 16px 8px rgba(0,0,0,0.4)',
+      },
+      borderRadius: {
+        '3': '3rem',
+      },
     },
   },
   // variants: {
